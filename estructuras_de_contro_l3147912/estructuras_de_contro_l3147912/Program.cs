@@ -65,6 +65,74 @@ namespace estructuras_de_contro_l3147912
             //Console.WriteLine("Interés pagado en el primer mes: " + interesMes);
             //Console.WriteLine("Total a pagar incluyendo intereses: " + totalPagar);
 
+            ////primer paso
+            //Console.WriteLine("=== colilla de pago ===\n");
+
+
+            //Console.Write("Nombre del empleado: ");
+            //string nombre = Console.ReadLine();
+
+            //Console.Write("Salario del empleado: ");
+            //double salario = Convert.ToDouble(Console.ReadLine());
+
+            //double neto = salario;
+
+            //Console.WriteLine("\n--- COLILLA DE PAGO ---");
+            //Console.WriteLine("Empleado: " + nombre);
+            //Console.WriteLine("Salario: $" + neto);
+
+            //Console.WriteLine("\nPresione una tecla para salir...");
+            //Console.ReadKey();
+
+
+            ////segundaparte
+            //Console.WriteLine("===colilla de pago ===\n");
+
+            //Console.Write("Nombre del empleado: ");
+            //string nombre = Console.ReadLine();
+
+            //Console.Write("Salario del empleado: ");
+            //double salario = Convert.ToDouble(Console.ReadLine());
+
+            //Console.Write("Ahorro mensual programado: ");
+            //double ahorro = Convert.ToDouble(Console.ReadLine());
+
+            //double salarioNeto = salario - ahorro;
+
+            //Console.WriteLine("\n--- pago ---");
+            //Console.WriteLine("Empleado: " + nombre);
+            //Console.WriteLine("Salario bruto: $" + salario);
+            //Console.WriteLine("Ahorro mensual: $" + ahorro);
+            //Console.WriteLine("Salario neto a recibir: $" + salarioNeto);
+
+            //Console.WriteLine("\nPresione una tecla para salir...");
+            //Console.ReadKey();
+           
+            
+            Console.WriteLine("=== COLILLA DE PAGO ===\n");
+
+            Console.Write("Nombre del empleado: ");
+            string nombre = Console.ReadLine();
+
+            Console.Write("Salario del empleado: ");
+            double salario = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Ahorro mensual programado: ");
+            double ahorro = Convert.ToDouble(Console.ReadLine());
+
+         
+            double descuentoEPS = salario * 0.125; 
+            double salarioNeto = salario - ahorro - descuentoEPS;
+
+            Console.WriteLine("\n--- COLILLA DE PAGO ---");
+            Console.WriteLine("Empleado: " + nombre);
+            Console.WriteLine("Salario bruto: $" + salario);
+            Console.WriteLine("Ahorro mensual: $" + ahorro);
+            Console.WriteLine("Descuento EPS (12.5%): $" + descuentoEPS);
+            Console.WriteLine("Salario neto a recibir: $" + salarioNeto);
+
+            Console.WriteLine("\nPresione una tecla para salir...");
+            Console.ReadKey();
 
         }
     }
